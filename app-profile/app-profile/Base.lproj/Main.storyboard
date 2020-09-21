@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="ipad9_7" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -28,8 +30,8 @@
                                     <constraint firstAttribute="width" constant="110" id="t3X-vC-wta"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Devslopes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vSw-qc-6Rp">
-                                <rect key="frame" x="138" y="175.5" width="98.5" height="29"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Firma" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vSw-qc-6Rp">
+                                <rect key="frame" x="138" y="175.5" width="54" height="29"/>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -99,7 +101,7 @@
                                     </imageView>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZWA-KJ-yvs">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZWA-KJ-yvs">
                                 <rect key="frame" x="223.5" y="876" width="321" height="59"/>
                                 <color key="backgroundColor" red="0.84462362530000001" green="0.28099316359999998" blue="0.1175512448" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
@@ -108,11 +110,12 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
                                 <state key="normal" title="Customize DashBoard">
-                                    <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <color key="titleColor" systemColor="systemBackgroundColor"/>
                                 </state>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="zft-0A-cTp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1Yq-Ke-KuH"/>
                             <constraint firstItem="vSw-qc-6Rp" firstAttribute="leading" secondItem="M5j-JN-HZe" secondAttribute="trailing" constant="8" id="1xm-lo-MDG"/>
@@ -137,15 +140,14 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qyk-BB-nnr" secondAttribute="trailing" constant="40" id="uaP-xi-zUr"/>
                             <constraint firstItem="ZmU-Vs-40h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="zvM-EB-EJG"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="ZWA-KJ-yvs"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="7em-2P-YGa"/>
-                                <exclude reference="NR6-vh-FjQ"/>
                                 <exclude reference="fAV-WZ-hsQ"/>
+                                <exclude reference="NR6-vh-FjQ"/>
                                 <exclude reference="OUM-Ve-Xxi"/>
                             </mask>
                         </variation>
@@ -156,11 +158,11 @@
                             <mask key="constraints">
                                 <include reference="7em-2P-YGa"/>
                                 <exclude reference="g3I-gW-P9t"/>
+                                <exclude reference="ESu-C0-eg9"/>
+                                <include reference="fAV-WZ-hsQ"/>
                                 <include reference="NR6-vh-FjQ"/>
                                 <exclude reference="enF-Gj-phI"/>
                                 <exclude reference="t2e-Cm-z1h"/>
-                                <exclude reference="ESu-C0-eg9"/>
-                                <include reference="fAV-WZ-hsQ"/>
                                 <include reference="OUM-Ve-Xxi"/>
                                 <exclude reference="hOx-xJ-Q9U"/>
                             </mask>
@@ -182,5 +184,8 @@
         <image name="devslopesProfileLogo" width="191" height="191"/>
         <image name="favoriteButton" width="58" height="57"/>
         <image name="inboxButton" width="57" height="57"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
